@@ -1,0 +1,19 @@
+.container {
+  @apply p-4 rounded-lg bg-white border text-center space-y-4;
+}
+
+.title {
+  @apply font-semibold text-[var(--neutrals-grey)];
+}
+
+.container:hover {
+  @apply border-[var(--primary-500)];
+}
+
+.container:hover .title {
+  @apply text-[var(--primary-500)];
+}
+
+.container:hover .count {
+  @apply text-[var(--primary-500)];
+}

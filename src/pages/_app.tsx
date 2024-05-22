@@ -7,6 +7,27 @@ import { Poppins } from "next/font/google";
 import { theme } from "@/utils/theme";
 import { appWithTranslation } from "next-i18next";
 
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],

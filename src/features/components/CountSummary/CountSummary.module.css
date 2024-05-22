@@ -1,5 +1,5 @@
 .container {
-  @apply p-4 rounded-lg bg-white border text-center space-y-4;
+  @apply p-4 rounded-lg bg-white border text-center space-y-4 transition-colors duration-150;
 }
 
 .title {

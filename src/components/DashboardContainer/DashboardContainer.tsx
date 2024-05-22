@@ -5,6 +5,7 @@ import styles from "./DashboardContainer.module.css";
 import Topbar from "../Topbar/Topbar";
 
 export type DashboardContainerProps = {
+  title: string;
   children?: React.ReactNode;
 };
 
@@ -13,7 +14,7 @@ const DashboardContainer = (props: DashboardContainerProps) => {
     <div>
       <Sidebar />
       <div className={styles.wrapper}>
-        <Topbar />
+        <Topbar title={props.title} />
         <div className={styles.content}>{props.children}</div>
       </div>
     </div>

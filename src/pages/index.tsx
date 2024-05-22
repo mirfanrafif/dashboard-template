@@ -2,7 +2,7 @@ import DashboardContainer from "@/components/DashboardContainer/DashboardContain
 
 export default function Home() {
   return (
-    <DashboardContainer>
+    <DashboardContainer title="Overview">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum
         consequuntur at dolores pariatur veritatis incidunt quae tempora vitae,

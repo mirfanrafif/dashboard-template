@@ -8,7 +8,15 @@ export type LoginForm = {
 export const useLoginPageViewModel = () => {
   const form = useForm<LoginForm>();
 
-  const onSubmit = form.handleSubmit((data) => {});
+  const onSubmit = form.handleSubmit((data) => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(true);
+      }, 2000);
+    }).then(() => {
+      alert("Form submitted!");
+    });
+  });
 
   return {
     form,

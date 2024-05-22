@@ -1,0 +1,7 @@
+.wrapper {
+  @apply pl-64 bg-[var(--neutrals-grey-bg)] min-h-screen;
+}
+
+.content {
+  @apply p-4;
+}

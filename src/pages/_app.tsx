@@ -5,6 +5,7 @@ import type { AppProps } from "next/app";
 import { Poppins } from "next/font/google";
 
 import { theme } from "@/utils/theme";
+import { appWithTranslation } from "next-i18next";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -12,7 +13,7 @@ const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
 });
 
-export default function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <style jsx global>{`
@@ -26,3 +27,5 @@ export default function App({ Component, pageProps }: AppProps) {
     </>
   );
 }
+
+export default appWithTranslation(App);

@@ -8,6 +8,7 @@
   --background-end-rgb: 255, 255, 255;
 
   --neutrals-grey: #c3c3c3;
+  --neutrals-grey-bg: #f7f8fc;
 }
 
 @media (prefers-color-scheme: dark) {

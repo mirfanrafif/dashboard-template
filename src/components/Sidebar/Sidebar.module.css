@@ -1,0 +1,11 @@
+.sidebar {
+  @apply w-64 bg-gray-800 h-screen fixed top-0 left-0 text-white;
+}
+
+.brand {
+  @apply p-8;
+}
+
+.sidebarItem {
+  @apply py-4 px-8 block w-full hover:bg-gray-700;
+}

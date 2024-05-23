@@ -1,0 +1,7 @@
+.tableBody > tr > td:last-child {
+  text-align: right;
+}
+
+.tableBody > tr > td:first-child {
+  padding-left: 0px;
+}

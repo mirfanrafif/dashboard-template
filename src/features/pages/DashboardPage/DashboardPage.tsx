@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./DashboardPage.module.css";
 import CountSummary from "@/features/components/CountSummary/CountSummary";
 import ChartSection from "@/features/components/ChartSection/ChartSection";
+import UnresolvedTicketSection from "@/features/components/UnresolvedTicketSection/UnresolvedTicketSection";
 
 const DashboardPage = () => {
   return (
@@ -14,6 +15,8 @@ const DashboardPage = () => {
         <CountSummary title="On Hold" count={64} />
 
         <ChartSection />
+
+        <UnresolvedTicketSection />
       </div>
     </div>
   );

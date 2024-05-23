@@ -2,6 +2,7 @@ import React from "react";
 import Section from "../Section/Section";
 import {
   Badge,
+  Checkbox,
   Heading,
   IconButton,
   Table,
@@ -52,7 +53,10 @@ const NewTaskSection = () => {
           {tasks.map((task, index) => (
             <Tr key={index}>
               <Td>
-                <Text fontSize={"small"}>{task.title}</Text>
+                <div className="flex flex-row gap-x-4">
+                  <Checkbox />
+                  <Text fontSize={"small"}>{task.title}</Text>
+                </div>
               </Td>
               <Td>
                 {task.tags.map((tag, index) => (

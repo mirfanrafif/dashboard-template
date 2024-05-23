@@ -4,6 +4,7 @@ import styles from "./DashboardPage.module.css";
 import CountSummary from "@/features/components/CountSummary/CountSummary";
 import ChartSection from "@/features/components/ChartSection/ChartSection";
 import UnresolvedTicketSection from "@/features/components/UnresolvedTicketSection/UnresolvedTicketSection";
+import NewTaskSection from "@/features/components/NewTasks/NewTaskSection";
 
 const DashboardPage = () => {
   return (
@@ -17,6 +18,7 @@ const DashboardPage = () => {
         <ChartSection />
 
         <UnresolvedTicketSection />
+        <NewTaskSection />
       </div>
     </div>
   );
